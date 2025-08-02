@@ -1,13 +1,5 @@
-@font-face {
-    font-family: "tansongbird"; /*任意のフォントファミリー名でOK*/
-    src: url("../font/TANSONGBIRD.ttf") format("truetype"); /*fontがあるパスを書いて、formatを指定*/
-    font-display: swap; /*ダウンロード状況に応じてフォントの表示を変える
-(「swap」はWebフォントが読み込まれるまでフォールバックフォントで表示し、読み込まれた時点で置き換えます。)*/
-  }
-
 body {
   font-family: "Montserrat","Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
-  /* font-family: "tansongbird",sans-serif; 上で設定したフォントファミリー名 */
   font-size: 15px;
   letter-spacing: .05em;
   color: #333;
@@ -48,10 +40,6 @@ img {
   padding: 90px 0;
 }
 
-/* .section:nth-of-type(odd) {
-  background-color: #f7f7f7;
-} */
-
 .container {
   max-width: 1340px;
   margin: 0 auto;
@@ -62,14 +50,14 @@ img {
  見出し
 ---------------------------------*/
 .title {
-  font-size: 34px;
+  font-size: 4rem;
   font-weight: bold;
   line-height: 1;
   margin-bottom: 40px;
   text-align: center;
   letter-spacing: .05em;
   color: #333;
-  font-family: "tansongbird",sans-serif; /*上で設定したフォントファミリー名*/
+  font-family: 'Playfair Display', serif; 
 }
 
 .lead {
@@ -150,25 +138,20 @@ img {
  メインビジュアル
 ---------------------------------*/
 .mv {
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  height: auto;
-  text-align: center; */
   margin-top: 20px;
 }
 
 .mv-container {
-  /* position: relative; */
   padding: 0 20px;
   max-width: 1340px;
   margin: 0 auto;
 }
 
 .mv-sub-title {
-  font-family: "tansongbird",sans-serif; /*上で設定したフォントファミリー名*/
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 4rem;
 }
 
 .mv-imgWrap {
@@ -188,8 +171,8 @@ img {
 }
 
 .mv-title {
-  font-family: "tansongbird",sans-serif; /*上で設定したフォントファミリー名*/
-  font-size: 5.5rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 9rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -200,7 +183,7 @@ img {
 }
 
 .typing-text-en {
-  width: 8ch;
+  width: 10ch;
   white-space: nowrap;
   overflow: hidden;
   animation: typing 2s steps(8);
@@ -211,11 +194,6 @@ img {
     width: 0
   }
 }
-
-/* .mv-container img {
-  width: 100%;
-  height: auto;
-} */
 
 /*--------------------------------
  Works
@@ -431,7 +409,7 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1000px) {
   .mv-title {
-    font-size: 3.5rem;
+    font-size: 6.5rem;
   }
 }
 
@@ -452,7 +430,7 @@ img {
 
   /* 見出し */
   .title {
-    font-size: 1.2rem;
+    font-size: 2rem;
     margin-bottom: 20px;
   }
 
@@ -498,19 +476,15 @@ img {
   }
 
   /*  メインビジュアル */
-  /* .mv {
-    height: 40vh;
-  } */
-
   .mv-container {
     padding: 0 20px;
   }
 
   .mv-title {
-    font-size: 2.5rem;
+    font-size: 4rem;
   }
   .mv-sub-title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 20px;
   }
 
