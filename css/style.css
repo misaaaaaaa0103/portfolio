@@ -58,6 +58,7 @@ img {
   letter-spacing: .05em;
   color: #333;
   font-family: 'Playfair Display', serif; 
+  text-transform: uppercase;
 }
 
 .lead {
@@ -407,6 +408,10 @@ img {
   text-align: center;
 }
 
+.link-style {
+    word-break: break-all;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1000px) {
   .mv-title {
     font-size: 6.5rem;
@@ -584,5 +589,11 @@ img {
     font-size: 14px;
     line-height: 1.7;
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mv-title {
+    font-size: 2.5rem;
   }
 }
